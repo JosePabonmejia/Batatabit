@@ -11,10 +11,35 @@
     --off-white: #faf8f7;
     --just-white: #fff;
 }
-
-.title{
-     font-family: 'DM Sans', sans-serif;
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif; 
+    font-size: 62.5%;
 }
-.title2{
-    font-family: 'Inter', sans-serif;
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+}
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+.header-title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 50px;
+    text-align: center;
+    align-self: center;
 }
