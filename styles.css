@@ -8,6 +8,8 @@
     --warm-black: #282623;
     --black: #201e1c;
     --grey: #bababa;
+    --grey-Title:rgba(117, 117, 117, 1);
+    --grey-Title-Black:rgba(128, 128, 128, 1);
     --off-white: #faf8f7;
     --just-white: #fff;
 }
@@ -16,7 +18,7 @@ html{
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif; 
-    font-size: 62.5%;
+    font-size: 62.5%;/*Dato importante para la hacer la convercion de la fuente a rems*/
 }
 header {
     position: relative;
@@ -27,6 +29,7 @@ header {
     min-width: 320px;
     height: 334px;
     text-align: center;
+    background:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 header img{
     width: 150px;
@@ -34,7 +37,7 @@ header img{
     margin-top: 60px;
     align-self: center;
 }
-.header-title-container{
+.header-title-container{/*Container*/
     width: 90%;
     min-width: 288px;
     max-width: 900px;
@@ -42,4 +45,80 @@ header img{
     margin-top: 50px;
     text-align: center;
     align-self: center;
+}
+.header-title-container h1 {
+    color: var(--just-white);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+} 
+
+.header-title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+} 
+.header--button{
+    position: absolute;
+    top: 308px;
+    left: calc(50% - 133px);/*Calcula que el boton este siempre centrado*/
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 229px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 4px;
+    background-color: var(--off-white);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--warm-black);
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+
+}
+.header--button img{
+    height: 14px;
+    width: 14px;
+    margin-top: 0;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-exchange-container .backgroundImg img{
+    width: 195px;
+    height: 195px;
+    
+}
+.main-exchange-container--title {/*Container*/
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;/*Margen para que siempre este en el medio*/
+}
+.main-exchange-container--title h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: var(--warm-black);
+}
+
+.main-exchange-container--title p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: var(--grey-Title);
 }
