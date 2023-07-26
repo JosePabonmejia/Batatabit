@@ -1,5 +1,5 @@
 :root{
-    --Dm:font-family: 'DM Sans', sans-serif;
+    --Dm:'DM Sans', sans-serif;
     --Inter:font-family: 'Inter', sans-serif;
     --bitcoin-orange: #f7931a;
     --soft-orange: #ffe9d5;
@@ -9,6 +9,7 @@
     --black: #201e1c;
     --grey: #bababa;
     --grey-Title:rgba(117, 117, 117, 1);
+    --grey-Table:rgba(181, 176, 172, 1);
     --grey-Title-Black:rgba(128, 128, 128, 1);
     --off-white: #faf8f7;
     --just-white: #fff;
@@ -121,4 +122,45 @@ main {
     line-height: 1.8rem;
     font-weight: 500;
     color: var(--grey-Title);
+}
+.main-churrecy-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family:'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+.main-churrecy-table .currecy-table--title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+    margin-left: 30px;
+    font-family: var(--Dm);
+}
+.currecy-table--container {
+    width: 90%;
+    height: 250px;
+    min-width: 230px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.currecy-table--container table {
+    width: 100%;
+    height: 100%;
+}
+.currecy-table--container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey-Table);
+    background-color: var(--just-white);
+    border-radius: 2px;
 }
