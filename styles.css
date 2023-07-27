@@ -144,14 +144,9 @@ main {
     margin-left: 30px;
     font-family: var(--Dm);
 }
-.main-churrecy-table .currecy-table--titleBlue{
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 2.3rem;
+.main-churrecy-table .currecy-table--title.Blue{
+    
     color: var(--secondary-blue);
-    margin-left: 30px;
-    font-family: var(--Dm);
 }
 .currecy-table--container {
     width: 90%;
@@ -221,14 +216,17 @@ main {
     display: grid;
     place-items: center;
 }
-
-
-.currecy-table--dateBlue{
-    width: 173px;
-    height: 31px;
+.currecy-table--date.Blue{
     background-color: var(--soft-blue);
-    border-radius: 8px;
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
+}
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background: var(--warm-black);
+}
+.product-detail--batata-logo{
+    position: ;
 }
