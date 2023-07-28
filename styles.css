@@ -15,13 +15,24 @@
     --just-white: #fff;
 }
 html{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif; 
     font-size: 62.5%;/*Dato importante para la hacer la convercion de la fuente a rems*/
 }
+body{
+    width: 320px;
+}
+@media (min-width:320px) {
+    body{
+      width: 100%;  
+    }
+    
+}
 header {
+    border:solid 1px blue;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -88,9 +99,10 @@ header img{
 }
 
 main {
-    width: 100%;
+    
     height: auto;
     background-color: var(--off-white);
+    border: solid 1px red;
 }
 .main-exchange-container{
     width: 100%;
@@ -222,11 +234,78 @@ main {
 .main-product-detail{
     position: relative;
     width: 100%;
-    min-width: 320px;
     height: auto;
-    padding: 20px 10px;
-    background: var(--warm-black);
+    padding-top: 25px;
+    background: var(--black);
+    text-align: center;
+    
 }
 .product-detail--batata-logo{
-    position: ;
+    position: absolute;
+    width: 41px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 30px);
+    background-image:url('./assets/icons/batata.svg');
+}
+.product-detail--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey-Title-Black);
+}
+.product-detail--card{
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px 15px 20px 15px;
+    height: 152px;
+    background-color: var(--warm-black);
+    border-radius: 4px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.16);
+    text-align: start;
+    
+
+}
+.product-detail--card .clock {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-image: url(./assets/icons/clock.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.product--card-title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    margin-top: 0;
+
+}
+.product--card--body {
+    text-align: start;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey-Title-Black);
 }
