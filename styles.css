@@ -227,6 +227,7 @@ main {
     margin: 0 auto;
     display: grid;
     place-items: center;
+    margin-top: 20px;
 }
 .currecy-table--date.Blue{
     background-color: var(--soft-blue);
@@ -481,14 +482,15 @@ footer{
     
 } 
 .footer-logo p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.8rem;
     font-weight: 500;
     color: var(--just-white);
 }
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
     .product-cards--container{
-        
+       
+
     }
 }
