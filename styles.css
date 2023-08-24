@@ -488,9 +488,3 @@ footer{
     color: var(--just-white);
 }
 
-@media (min-width: 700px) {
-    .product-cards--container{
-       
-
-    }
-}
